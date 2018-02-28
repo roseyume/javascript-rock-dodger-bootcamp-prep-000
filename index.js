@@ -114,13 +114,13 @@ function moveDodger(e) {
 
 function moveDodgerLeft() {
  
-   window.requestAnimationFrame(function(){if(positionToInteger(DODGER.style.left)>=0)DODGER.style.left=`${positionToInteger(DODGER.style.left)+4}px`});
+   window.requestAnimationFrame(function(){if(positionToInteger(DODGER.style.left)>0)DODGER.style.left=`${positionToInteger(DODGER.style.left)+4}px`});
    
 }
 
 function moveDodgerRight() {
   
-   window.requestAnimationFrame(function(){if(positionToInteger(DODGER.style.right)<=360)DODGER.style.right = `${DODGER.style.right+4}px`});
+   window.requestAnimationFrame(function(){if(positionToInteger(DODGER.style.right)<360)DODGER.style.right = `${DODGER.style.right+4}px`});
 }
 
 /**
