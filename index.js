@@ -120,7 +120,7 @@ function moveDodgerLeft() {
 
 function moveDodgerRight() {
   
-   window.requestAnimationFrame(function(){if(positionToInteger(DODGER.style.right)<=180)DODGER.style.right = `${DODGER.style.right+4}px`});
+   window.requestAnimationFrame(function(){if(positionToInteger(DODGER.style.right)<360)DODGER.style.right = `${DODGER.style.right+4}px`});
 }
 
 /**
